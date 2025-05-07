@@ -15,10 +15,6 @@ main:
   #Result: the absolute of the integer is now in a0
 
 exit:
-  #TODO remove ecall
-  lw a0, 0(a0)
-  li a7, 1
-  ecall
   li a7, 10              # Exit syscall code
   ecall                  # Terminate the program
 
